@@ -90,9 +90,9 @@ Now we add dependencies to Cytoscape bundles that we need to create a proper app
 
  1. In the _Select Dependency_ dialog:
 
-   - Enter `org.cytoscape` in _Group Id_.
-   - Enter `service-api` in _Artifact Id_.
-   - Enter `3.0.0-beta4-SNAPSHOT` in _Version_.
+    - Enter `org.cytoscape` in _Group Id_.
+    - Enter `service-api` in _Artifact Id_.
+    - Enter `3.0.0-beta4-SNAPSHOT` in _Version_.
 
     Click _OK_.
 
@@ -100,9 +100,9 @@ Now we add dependencies to Cytoscape bundles that we need to create a proper app
 
  1. Repeat the above steps, but with these artifact IDs. The group ID and version stay the same.
 
-   - `swing-application-api`
-   - `work-api`
-   - `core-task-api`
+    - `swing-application-api`
+    - `work-api`
+    - `core-task-api`
 
 Save _pom.xml_.
 
@@ -118,11 +118,11 @@ modifying the Activator class created by osgi-archetype.
 
  1. Open _CyActivator.java_. Make the following changes:
 
-   - Remove the _stop_ method.
-   - Add `import org.cytoscape.service.util.AbstractCyActivator;` to the list of import statements.
-   - Change _CyActivator_ so that it `extends AbstractCyActivator`.
-   - Remove the import statement for `BundleActivator`.
-   - Add something to the _start_ method like `System.out.println("Hello from ZigZag!");`.
+    - Remove the _stop_ method.
+    - Add `import org.cytoscape.service.util.AbstractCyActivator;` to the list of import statements.
+    - Change _CyActivator_ so that it `extends AbstractCyActivator`.
+    - Remove the import statement for `BundleActivator`.
+    - Add something to the _start_ method like `System.out.println("Hello from ZigZag!");`.
 
   Save _CyActivator.java_.
 
