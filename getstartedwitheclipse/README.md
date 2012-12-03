@@ -118,15 +118,11 @@ modifying the Activator class created by osgi-archetype.
 
  1. Open _CyActivator.java_. Make the following changes:
 
-  - Remove the _stop_ method.
-
-  - Add `import org.cytoscape.service.util.AbstractCyActivator;` to the list of import statements.
-
-  - Change _CyActivator_ so that it `extends AbstractCyActivator`.
-
-  - Remove the import statement for `BundleActivator`.
-
-  - Add something to the _start_ method like `System.out.println("Hello from ZigZag!");`.
+   - Remove the _stop_ method.
+   - Add `import org.cytoscape.service.util.AbstractCyActivator;` to the list of import statements.
+   - Change _CyActivator_ so that it `extends AbstractCyActivator`.
+   - Remove the import statement for `BundleActivator`.
+   - Add something to the _start_ method like `System.out.println("Hello from ZigZag!");`.
 
   Save _CyActivator.java_.
 
@@ -142,13 +138,13 @@ we tell pom.xml that we want to use CyActivator instead.
       _project_ &rarr; _build_ &rarr; _plugins_ &rarr; _plugin org.apache.felix : maven-bundle-plugin_
       &rarr; _configuration_ &rarr; _instructions_ &rarr; _Bundle-Activator_.
 
-    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/bundleactivator.png)
+   ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/bundleactivator.png)
 
 # Building and running your app
 
  1. Right click on _pom.xml_, then choose _Run As_ &rarr; _Maven install_.
 
-    ![](mvninstall.png)
+   ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/mvninstall.png)
 
  1. When your app has been built, open up Cytoscape. Once Cytoscape has finished starting up,
     copy your app's jar to the  _CytoscapeConfiguration_ > _3_ > _apps_ > _installed_ folder.
