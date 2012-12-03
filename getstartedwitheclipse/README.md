@@ -9,33 +9,33 @@ The version of Eclipse we will be using is Juno Service Release 1.
 
     ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/download1.png)
 
-    ![](download2.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/download2.png)
 
  1. Extract the downloaded archive.
 
-    ![](extract.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/extract.png)
 
     You should now have a folder with Eclipse:
 
-    ![](extract2.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/extract2.png)
 
 # Start Eclipse
 
  1. Start the Eclipse application.
 
-    ![](launch.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/launch.png)
 
  1. If you get this dialog, just click _OK_.
 
-    ![](workspacesetup.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/workspacesetup.png)
 
  1. If you see this window, click the _Workbench_ icon.
 
-    ![](welcomescreen.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/welcomescreen.png)
 
     Now you should be seeing Eclipse's _Workbench_ window.
 
-    ![](workspace.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/workspace.png)
 
 # Create an OSGi bundle project
 
@@ -46,16 +46,16 @@ archetype to create our project.
 
  1. In the _New_ dialog, open the _Maven_ folder, then choose _Maven Project_. Click _Next_.
 
-    ![](newmvnproj.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/newmvnproj.png)
 
  1. In the _New Maven Project_ dialog, click _Next_.
 
-    ![](newmvnproj2.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/newmvnproj2.png)
 
  1. Enter `osgi` in the _Filter_ field. Then select _osgi-archetype_ in the _Artifact Id_ column.
     Click _Next_.
 
-    ![](newmvnproj3.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/newmvnproj3.png)
 
  1. Fill out some details about the project:
     - In the _Group Id_ field, enter `com.example`.
@@ -64,7 +64,7 @@ archetype to create our project.
 
     Click _Finish_.
 
-    ![](newmvnproj4.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/newmvnproj4.png)
 
 # Set up pom.xml for Cytoscape
 
@@ -78,11 +78,11 @@ uses version 4.2.0. We change the OSGi version to 4.2.0, so we can use our bundl
 
  1. Select the _org.osgi.core_ dependency, then click _Properties_.
 
-  ![](osgi-version.png)
+  ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/osgi-version.png)
 
  1. Enter `4.2.0` in the _Version_ field. Click _OK_.
 
-  ![](osgi-version2.png)
+  ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/osgi-version2.png)
 
 Now we add dependencies to Cytoscape bundles that we need to create a proper app.
 
@@ -96,7 +96,7 @@ Now we add dependencies to Cytoscape bundles that we need to create a proper app
 
     Click _OK_.
 
-  ![](add-dep-serviceapi.png)
+  ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/add-dep-serviceapi.png)
 
  1. Repeat the above steps, but with these artifact IDs. The group ID and version stay the same.
 
@@ -130,7 +130,7 @@ modifying the Activator class created by osgi-archetype.
 
   Save _CyActivator.java_.
 
-  ![](cyactivator.png)
+  ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/cyactivator.png)
 
 osgi-archetype created a pom.xml file that refers to Activator.java. Because we renamed it,
 we tell pom.xml that we want to use CyActivator instead.
@@ -142,7 +142,7 @@ we tell pom.xml that we want to use CyActivator instead.
       _project_ &rarr; _build_ &rarr; _plugins_ &rarr; _plugin org.apache.felix : maven-bundle-plugin_
       &rarr; _configuration_ &rarr; _instructions_ &rarr; _Bundle-Activator_.
 
-    ![](bundleactivator.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/bundleactivator.png)
 
 # Building and running your app
 
