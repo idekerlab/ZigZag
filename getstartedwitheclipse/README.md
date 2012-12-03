@@ -7,7 +7,7 @@ The version of Eclipse we will be using is Juno Service Release 1.
 
  1. Download _Eclipse IDE for Java Developers_ from <http://www.eclipse.org/downloads/>.
 
-    ![](download1.png)
+    ![](https://raw.github.com/cytoscape/ZigZag/master/getstartedwitheclipse/download1.png)
 
     ![](download2.png)
 
@@ -90,9 +90,9 @@ Now we add dependencies to Cytoscape bundles that we need to create a proper app
 
  1. In the _Select Dependency_ dialog:
 
-  - Enter `org.cytoscape` in _Group Id_.
-  - Enter `service-api` in _Artifact Id_.
-  - Enter `3.0.0-beta4-SNAPSHOT` in _Version_.
+   - Enter `org.cytoscape` in _Group Id_.
+   - Enter `service-api` in _Artifact Id_.
+   - Enter `3.0.0-beta4-SNAPSHOT` in _Version_.
 
     Click _OK_.
 
@@ -100,9 +100,9 @@ Now we add dependencies to Cytoscape bundles that we need to create a proper app
 
  1. Repeat the above steps, but with these artifact IDs. The group ID and version stay the same.
 
-  - `swing-application-api`
-  - `work-api`
-  - `core-task-api`
+   - `swing-application-api`
+   - `work-api`
+   - `core-task-api`
 
 Save _pom.xml_.
 
