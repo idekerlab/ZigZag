@@ -78,11 +78,11 @@ uses version 4.2.0. We change the OSGi version to 4.2.0, so we can use our bundl
 
  1. Select the _org.osgi.core_ dependency, then click _Properties_.
 
-    ![](osgi-version.png)
+  ![](osgi-version.png)
 
  1. Enter `4.2.0` in the _Version_ field. Click _OK_.
 
-    ![](osgi-version2.png)
+  ![](osgi-version2.png)
 
 Now we add dependencies to Cytoscape bundles that we need to create a proper app.
 
@@ -90,19 +90,19 @@ Now we add dependencies to Cytoscape bundles that we need to create a proper app
 
  1. In the _Select Dependency_ dialog:
 
-    - Enter `org.cytoscape` in _Group Id_.
-    - Enter `service-api` in _Artifact Id_.
-    - Enter `3.0.0-beta4-SNAPSHOT` in _Version_.
+  - Enter `org.cytoscape` in _Group Id_.
+  - Enter `service-api` in _Artifact Id_.
+  - Enter `3.0.0-beta4-SNAPSHOT` in _Version_.
 
     Click _OK_.
 
-    ![](add-dep-serviceapi.png)
+  ![](add-dep-serviceapi.png)
 
  1. Repeat the above steps, but with these artifact IDs. The group ID and version stay the same.
 
-    - `swing-application-api`
-    - `work-api`
-    - `core-task-api`
+  - `swing-application-api`
+  - `work-api`
+  - `core-task-api`
 
 Save _pom.xml_.
 
@@ -118,19 +118,19 @@ modifying the Activator class created by osgi-archetype.
 
  1. Open _CyActivator.java_. Make the following changes:
 
-    - Remove the _stop_ method.
+  - Remove the _stop_ method.
 
-    - Add `import org.cytoscape.service.util.AbstractCyActivator;` to the list of import statements.
+  - Add `import org.cytoscape.service.util.AbstractCyActivator;` to the list of import statements.
 
-    - Change _CyActivator_ so that it `extends AbstractCyActivator`.
+  - Change _CyActivator_ so that it `extends AbstractCyActivator`.
 
-    - Remove the import statement for `BundleActivator`.
+  - Remove the import statement for `BundleActivator`.
 
-    - Add something to the _start_ method like `System.out.println("Hello from ZigZag!");`.
+  - Add something to the _start_ method like `System.out.println("Hello from ZigZag!");`.
 
-    Save _CyActivator.java_.
+  Save _CyActivator.java_.
 
-    ![](cyactivator.png)
+  ![](cyactivator.png)
 
 osgi-archetype created a pom.xml file that refers to Activator.java. Because we renamed it,
 we tell pom.xml that we want to use CyActivator instead.
