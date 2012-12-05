@@ -39,7 +39,7 @@ The version of Eclipse we will be using is Juno Service Release 1.
 
 # Create the project
 
- 1. In the menu bar, choose _File_ &rarr; _New_ &rarr; _Other_.
+ 1. In the menu bar, choose _File_ &rarr; _Import_.
 
  1. Open the _Maven_ folder, then click on _Existing Maven Projects_. Click _Next_.
 
